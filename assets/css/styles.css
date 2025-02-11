@@ -524,8 +524,8 @@ a {
 }
 
 .footer .row {
+    padding-bottom: 58px;
     display: flex;
     justify-content: space-between;
     margin-top: 74px;
-    padding-bottom: 58px;
 }
