@@ -481,7 +481,6 @@ a {
 .footer .body {
     display: flex;
     gap: 185px;
-    padding-bottom: 58px;
 }
 
 .footer .column .sub-section {
@@ -528,4 +527,5 @@ a {
     display: flex;
     justify-content: space-between;
     margin-top: 74px;
+    padding-bottom: 58px;
 }
