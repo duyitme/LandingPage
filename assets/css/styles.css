@@ -6,6 +6,11 @@
     --primary-color: #0f1b4c;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
     font-family: "Poppins", sans-serif;
@@ -34,55 +39,64 @@ a {
     margin-right: auto;
 }
 
-.header {
+.hero-wrap {
     background: #e6f0ff;
-    height: 100vh;
-    padding-top: 38px;
+    height: calc(100vh - 70px);
     position: relative;
     margin-bottom: 79px;
-}
-
-.header .navbar {
     display: flex;
     align-items: center;
 }
 
-.header .list {
+.fixed-header {
+    background: #e6f0ff;
+    position: sticky;
+    top: -20px;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.fixed-header .navbar {
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.fixed-header .list {
     display: flex;
 }
 
-.header .list a {
+.fixed-header .list a {
     color: #4f5361;
     font-size: 1.4rem;
     font-weight: 500;
     padding: 10px 14px;
 }
 
-.header .action {
+.fixed-header .action {
     margin-left: auto;
 }
 
-.header .logo {
+.fixed-header .logo {
     margin-right: 50px;
 }
 
-.header .link {
+.fixed-header .link {
     color: #4f5361;
     font-size: 1.4rem;
     font-weight: 500;
     margin-right: 18px;
 }
 
-.header .btn-action {
+.fixed-header .btn-action {
     padding: 13px 16px;
 }
 
-.header a:hover {
+.fixed-header a:hover {
     text-decoration: underline;
 }
-
-.header .hero {
-    margin-top: 138px;
+/*  */
+.hero-wrap .hero {
     display: flex;
 }
 
@@ -114,8 +128,10 @@ a {
 }
 
 .hero .image {
+    width: 534px;
     position: absolute;
     bottom: 0;
+    right: calc((100vw - 1110px) / 2 - 40px);
 }
 
 .hero .btn-hero {
@@ -524,7 +540,7 @@ a {
 }
 
 .footer .row {
-    padding-bottom: 58px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     margin-top: 74px;
